@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html标签练习demo-2</title>
+</head>
+    <h1>
+        目录:
+    </h1>
+    <ol>
+        <li>
+            <a href="#表格标签学习">表格标签</a>
+        </li>
+        <li>
+            <a href="#列表标签学习">列表标签</a>
+        </li>
+        <li>
+            <a href="#表单标签学习">表单标签</a>
+        </li>
+        <li>
+            <a href="#综合案例">综合案例</a>
+        </li>
+    </ol>
+    <p id="表格标签学习">
+        <h1>
+            一、表格标签
+        </h1>
+        <h2>
+            1. 基本语法[table:表示整个表格; tr:表示一行(table row); td:表示一个单元格(table data)]
+        </h2>
+        <table>
+            <tr> <td>姓名</td> <td>性别</td> <td>年龄</td> </tr>
+            <tr> <td>刘德华</td> <td>男</td> <td>18</td> </tr>
+            <tr> <td>张西宇</td> <td>男</td> <td>18</td> </tr>
+            <tr> <td>张学友</td> <td>男</td> <td>57</td> </tr>
+            <tr> <td>黎明</td> <td>男</td> <td>56</td> </tr>
+        </table>
+        <h2>
+            2. 表头单元格(th:表头单元格(table header)
+        </h2>
+        <p>表头单元格相对于普通单元格, 字体会加粗并且居中</p>
+        <table>
+            <tr> <th>姓名</th> <th>性别</th> <th>年龄</th> </tr>
+            <tr> <td>刘德华</td> <td>男</td> <td>18</td> </tr>
+            <tr> <td>张西宇</td> <td>男</td> <td>18</td> </tr>
+            <tr> <td>张学友</td> <td>男</td> <td>57</td> </tr>
+            <tr> <td>黎明</td> <td>男</td> <td>56</td> </tr>
+        </table>
+        <h2>
+            3. 表格属性(一般只在css中使用)
+        </h2>
+        <table align="Center" border="1" cellpadding="0" cellspacing="0" width="500" height="249">
+            <tr> <th>属性名</th> <th>属性值</th> <th>描述</th> </tr>
+            <tr> <td>align</td> <td>left、center、right</td> <td>规定表格相对周围元素的对齐方式</td> </tr>
+            <tr> <td>border</td> <td>1或""</td> <td>规定表格单元是否拥有边框，默认为""，表示没有边框</td> </tr>
+            <tr> <td>cellpadding</td> <td>像素值</td> <td>规定单元边沿预期内容之间的空白, 默认1像素</td> </tr>
+            <tr> <td>cellspacing</td> <td>像素值</td> <td>规定单元格之间的空白, 默认2像素</td> </tr>
+            <tr> <td>width</td> <td>像素值或百分比</td> <td>规定表格的宽度</td> </tr>
+        </table>
+        <h2>
+            4. 表格案例
+        </h2>
+        <table align="Center" border="1" cellpadding="0" cellspacing="0" Height="200" Width="500">
+            <tr> 
+                <th>排名</th> 
+                <th>关键词</th>
+                <th>趋势</th> 
+                <th>今日搜索</th> 
+                <th>最近七日</th> 
+                <th>相关链接</th> 
+            </tr>
+            <tr> 
+                <td>1</td> 
+                <td>鬼吹灯</td>
+                <td><img src="down.png"/></td> 
+                <td>345</td>
+                <td>123</td>
+                <td>
+                    <a href="#">贴吧</a>
+                    <a href="#">图片</a>
+                    <a href="#">百科</a>
+                </td> 
+            </tr>
+            <tr> 
+                <td>2</td> 
+                <td>盗墓笔记</td>
+                <td><img src="down.png"/></td> 
+                <td>251</td>
+                <td>75</td>
+                <td>
+                    <a href="#">贴吧</a>
+                    <a href="#">图片</a>
+                    <a href="#">百科</a>
+                </td> 
+            </tr>
+        </table>
+        <h2>
+            5. 表格结构标签(thead:表格头部区域、tbody:表格主体区域)
+        </h2>
+        <table align="Center" border="1" cellpadding="0" cellspacing="0" Height="200" Width="500">
+            <thead>
+                <tr> 
+                    <th>排名</th> 
+                    <th>关键词</th>
+                    <th>趋势</th> 
+                    <th>今日搜索</th> 
+                    <th>最近七日</th> 
+                    <th>相关链接</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr> 
+                    <td>1</td> 
+                    <td>鬼吹灯</td>
+                    <td><img src="down.png"/></td> 
+                    <td>345</td>
+                    <td>123</td>
+                    <td>
+                        <a href="#">贴吧</a>
+                        <a href="#">图片</a>
+                        <a href="#">百科</a>
+                    </td> 
+                </tr>
+                <tr> 
+                    <td>2</td> 
+                    <td>盗墓笔记</td>
+                    <td><img src="down.png"/></td> 
+                    <td>345</td>
+                    <td>123</td>
+                    <td>
+                        <a href="#">贴吧</a>
+                        <a href="#">图片</a>
+                        <a href="#">百科</a>
+                    </td> 
+                </tr>
+            </tbody>
+        </table>
+        <h2>
+            6. 合并单元格
+        </h2>
+        <h3>
+            6.1 合并单元格方式
+        </h3>
+        跨行合并: rowspan="合并单元格的个数"<br>
+        跨列合并: colspan="合并单元格的个数"<br>
+        <h3>
+            6.2 目标单元格
+        </h3>
+        跨行合并: 最上侧单元格为目标单元格, 写合并代码<br>
+        跨列合并: 最左侧单元格为目标单元格, 写合并代码<br>
+        <h3>
+            6.3 合并单元格的步骤
+        </h3>
+        <p>
+            1. 先确定是跨行还是跨列<br>
+            2. 找到目标单元格, 写上合并方式 = 合并的单元格数量, 比如:&lt;td colspan="2"&gt;&lt;/td&gt;.<br>
+            3. 删除多余单元格
+        </p>
+        <h3>
+            6.4 实例
+        </h3>
+        <table border="1" align="center" cellpanding="30" cellspacing="0" width="300" hight="200">
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th colspan="2">&nbsp;</th>
+                    <!-- <th>&nbsp;</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <!-- <td>&nbsp;</td> -->
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+    </p>
+
+    <p id="列表标签学习">
+        <h1>
+            二、列表标签 
+        </h1>
+        <h2>
+            1. 无序列表(ul: unordered list)
+        </h2>
+        <p>
+            1. 无序列表的各个列表项之间没有顺序之分, 是并列的。<br>
+            2. &lt;ul&gt;标签中<strong>只能</strong>放&lt;li&gt;标签, 其余任何内容都不能放。<br>
+            3. &lt;li&gt;&lt;/li&gt;其实是个容器, 里面可以放任何东西。<br>
+            4. 无序列表会自带样式属性, 但在实际应用中, 会使用css来设置。<br>
+        </p>
+        <h3>
+            示例：你最喜欢的食物是？
+        </h3>
+        <ul>
+            <li>榴莲</li>
+            <li>臭豆腐</li>
+            <li>鲱鱼罐头</li>
+        </ul>
+        <h2>
+            2. 有序列表(ol: ordered list)
+        </h2>
+        <p>
+            <ol>
+                <li>&lt;ol&gt;标签中只能嵌套&lt;li&gt;标签，其余任何内容都不能放。</li>
+                <li>&lt;li&gt;&lt;/li&gt;其实是个容器, 里面可以放任何东西。</li>
+                <li>无序列表会自带样式属性, 但在实际应用中, 会使用css来设置。</li>
+            </ol>
+        </p>
+        <h3>
+            示例: 粉丝数排行榜有序列表
+        </h3>
+        <ol>
+            <li>刘德华 10000</li>
+            <li>陈冠希 3500</li>
+            <li>周杰伦 50000</li>
+        </ol>
+        <h2>
+            3. 自定义列表(dl: definition list)
+        </h2>
+        <p>
+            <em>自定义列表常用于对术语或名词进行解释和描述,定义列表的列表项没有任何项目符号<br></em>
+            <em>自定义列表中只能放&lt;dt&gt;和&lt;dd&gt;</em>
+        </p>
+        <dl>
+            <dt>关注我们</dt>
+            <dd>新浪微博</dd>
+            <dd>官方微信</dd>
+            <dd>联系我们</dd>
+            <dt>关注我们1</dt>
+            <dd>新浪微博1</dd>
+            <dd>官方微信1</dd>
+            <dd>联系我们1</dd>
+        </dl>
+    </p>
+
+    <p id="表单标签学习">
+        <h1>
+            三、表单标签
+        </h1>
+        <h2>
+            1. 表单域标签, 用于用户信息的收集和传递(form)
+        </h2>
+        <em>&lt;form&gt;&lt;/form&gt;会把它范围内的表单元素信息提交给服务器</em>
+        <!-- 格式如下：
+        <form action="url地址" method="提交方式" name="表单域名称">
+            各种表单元素控件
+        </form>  -->
+        <h2>
+            2. 表单元素(input)
+        </h2>
+        <form action="xxx.php9527" method="get">
+
+            <!-- type="text" 文本框 用户可以里面输入任何文字-->
+            <!-- 属性value 为显示的默认值 一般对text标签有用 其余标签也可以写 供后端人员使用-->
+            <!-- 属性maxlength 规定输入的最大字符长度 -->
+            用户名：<input type="text" name="username" value="请输入用户名..." maxlength="6"> <br>
+            
+            <!-- type="password" 密码框 用户看不见的密码-->
+            密码：<input type="password"  name="pwd"> <br>
+
+            <!-- label 标签 用于绑定一个表单元素 点击 label 标签内的文本时 浏览器会自动将焦点（光标）转到对应表单上 用来增加用户体验 for与制定的表单id需要一致 -->
+            <!-- type="radio" 单选按钮 可以实现单选 -->
+            <!-- 属性name 是表单元素名字 多个单选按钮必须有相同的名字 才能实现多选一 -->
+            <!-- 属性checked 单选按钮和多选按钮可设置 checked 属性 当页面打开默认选中 -->
+            性别： <label for="man" >男：</label> <input type="radio"  name="sex" checked id="man">
+            <label for="women" >女：</label> <input type="radio" name="sex" id="women"> <br>
+            
+            <!-- type="checkbox" 复选框 可以实现多选 -->
+            爱好: 吃饭 <input type="checkbox" name="hobby"> 睡觉 <input type="checkbox" name="hobby"  checked> 打豆豆 <input type="checkbox" name="hobby"> <br>
+            
+            <!-- type="button" 定义一个普通按钮 一般与JavaScript配合使用 value 设置按钮的显示内容 -->
+            <input type="button" value="获取验证码" > <br>
+            
+            <!-- type="file" 定义一个文件域 可上传文件使用 -->
+            <input type="file"> <br>
+            
+            <!-- type="submit" 定义一个提交按钮 可将数据提交给服务器 value 设置按钮的显示内容 -->
+            <input type="submit" value="提交">
+            
+            <!-- type="reset" 定义一个重置按钮 还原表单元素的初始值 value 设置按钮的显示内容 -->
+            <input type="reset" value="重写填写">
+        </form>
+        <h2>
+            3. 下拉表单(select)
+        </h2>
+        <em>在页面中，如果有多个选项让用户选择，并且想要节约页面空间 可以使用select下拉表单标签。例：<br></em>
+        
+        <form>
+            请选择籍贯：
+            <select>
+                <option>北京</option>
+                <option>上海</option>
+                <option>天津</option>
+                <!-- 在option 中加入selected属性可设当前项为默认值-->
+                <option selected>火星</option>
+            </select>
+        </form>
+        <h2>
+            4. 文本域标签(textarea)
+        </h2>
+        例：<br>
+        <form>
+            今日反馈：
+            <textarea>pink老师，我知道这个反馈是textarea来做的</textarea>
+        </form>
+    </p>
+
+    <p id="综合案例">
+        <h1>
+            四、综合案例
+        </h1>
+        <form>
+            <strong>青春不常在，抓紧谈恋爱</strong>
+            <div>
+                性别
+                <input type="radio" name="sex">男 <input type="radio" name="sex">女
+            </div>
+            <div>
+                生日
+                <select>
+                    <option>                        
+                    </option>
+                </select>
+            </div>
+            <div>
+                所在地区
+                <input type="text" value="北京">
+            </div>
+            <div>
+                婚姻状况
+                <input type="radio" name="hunyin" id="weihun" checked>
+                <label for="weihun">未婚</label>
+                <input type="radio" name="hunyin" id="yihun">
+                <label for="yihun">已婚</label>
+                <input type="radio" name="hunyin" id="liyi">
+                <label for="liyi">离异</label>
+            </div>
+            <div>
+                学历
+                <select>
+                    <option>初中</option>
+                    <option>高中</option>
+                    <option>专科</option>
+                    <option>本科</option>
+                    <option>硕士</option>
+                    <option>博士</option>
+                </select>
+            </div>
+            <div>
+                喜欢的类型
+                <input type="checkbox" name="like" id="wumei">
+                <label for="wumei">妩媚的</label>
+                <input type="checkbox" name="like" id="keai">
+                <label for="keai">可爱的</label>
+                <input type="checkbox" name="like" id="xianrou">
+                <label for="xianrou">小鲜肉</label>
+                <input type="checkbox" name="like" id="larou">
+                <label for="larou">老腊肉</label>
+                <input type="checkbox" name="like" id="alllike">
+                <label for="alllike">都喜欢</label>
+            </div>
+            <div>
+                自我介绍
+                <textarea>自我介绍</textarea>
+            </div>
+            <div>
+                <input type="submit" value="免费注册">
+            </div>
+            <div>
+                <input type="checkbox" value="我同意注册条款和会员加入标准" checked>
+            </div>
+            <div>
+                <a href="https://denglu.com">我是会员，立即登录</a>
+            </div>
+            <div>
+                <strong>我承诺</strong><br>
+                <ul>
+                    <li>年满18岁，单身</li>
+                    <li>抱着严肃的态度</li>
+                    <li>真诚寻找另一半</li>
+                </ul>
+            </div>
+        </form>
+    </p>
+</body>
+</html>
