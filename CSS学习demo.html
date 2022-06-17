@@ -6,15 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS学习demo</title>
     <style>
-        /* 选择器{样式} */
-        /* 给谁改样式 {改什么样式} */
-        p{
-            color:red;
-            font-size: 12px;
+        /* CSS代码规范：
+           1. 展开式风格
+           2. 英文字母统一小写
+           3. 属性后跟空格 */
+        /* 选择器类型：
+           1. 标签选择器，针对所有指定标签生效                                        --- 较多  
+           2. 类选择器，针对特殊标签，也可以使用多类名，可多次调用（以.开头，.xxx）     --- 使用最多
+           3. id选择器，只能调用一次(以#开头，#...)，                                 --- 一般和js搭配
+           4. 通配符选择器，选择所有标签(单走一个 *)                                  --- 特殊情况使用
+        */
+        /* 字体系列（一般指定整个body）：
+           1. font-family 指定字体类型
+           2. font-size 指定字体大小（标题标签较为特殊，需要单独指定字体大小）
+           3. font-weight 字体的粗细，常用数字，不用bold或者normal，400变细 700变粗
+           4. font-style 文本风格 normal正常 italic斜体（主要场景对em斜体标签使用normal，让其变正常）
+        */
+        .box {
+            width: 100px;
+            height: 100px;
+            font-size: x-large;
+        }
+        .green {
+            /* 背景色 */
+            background-color: green;
+            /* 字体颜色 */
+            color: red;
+        }
+        .red {
+            background-color: red;
+            color: green;
+        }
+
+        #div1 {
+            font-size: large;
+            background-color: coral;
+            width: 80px;
+            height: 80px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            /* 设置多个字体可按顺序查找，如果电脑上没有前者，自动查找下一个字体 */
+            font-family: 'Times New Roman', Times, serif;
+            /* 谷歌浏览器默认文字大小为16px */
+            font-size: 20px;
+            font-weight: 400;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
     <p>有点意思</p>
+    <div class="box green" > box1 </div>
+    <div class="box red"> box2 </div>
+    <div class="box green"> box3 </div>
+    <div id="div1">div1</div>
+    <h2>
+        咏鹅
+    </h2>
+    <h3>
+        [唐]—骆宾王
+    </h3>
+    <p>鹅，鹅，鹅，曲项向天歌。</p>
+    <p class="bold">白毛浮绿水，红掌拨清波。</p>
 </body>
 </html>
