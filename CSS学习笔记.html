@@ -21,6 +21,36 @@
            2. font-size 指定字体大小（标题标签较为特殊，需要单独指定字体大小）
            3. font-weight 字体的粗细，常用数字，不用bold或者normal，400变细 700变粗
            4. font-style 文本风格 normal正常 italic斜体（主要场景对em斜体标签使用normal，让其变正常）
+           
+           简写复合字体属性，严格按照以下顺序设置字体属性
+           font: font-style(可省略) font-weight(可省略) font-size/line-height(必须) font-family(必须);
+        */
+        /* 文本外观样式
+           color: 字体颜色 常用三种形式：
+           1. 预定义颜色值(red/green/blue...) 
+           2. 16进制值(#FF0000/#FF6600...) ————— 最常用
+           3. RGB值(rgb(255,0,0)/rgb(100%,0%,0%))
+
+           text-align：水平对齐方式 left center right
+           
+           text-decoration：装饰文本 none(默认，无样式) underline(下划线) overline(上划线) line-through(删除线)
+           
+           text-indent：文本缩进 常用形式
+           1，像素值(12px/16px)
+           2. 相对当前文字大小缩进值(1em-缩进一个字/2em-缩进两个字)
+
+           line-height：行间距 
+           行间距是由 上间距+文本高度+下间距 组成, 文本高度默认16px
+        */
+        /* CSS的三种引入方式
+            1. 内部样式表
+              放到style标签里，style理论上可以放到html代码的任何位置，一般都放到<head></head>标签里，影响的是当前文档的所有样式
+            2. 行内样式表
+              在元素标签内部的style属性中设定CSS样式，适合修改简单样式，影响的是当前标签的样式。例如：
+              <p style="color: red; font-size: 12px;"></p>
+            3. 外部样式表
+              新建一个CSS文件，在html页面中，使用link标签引入这个文件，能提供个多个页面同时使用。例如：
+              <link rel="stylesheet" href="css文件路径">
         */
         .box {
             width: 100px;
@@ -43,6 +73,9 @@
             background-color: coral;
             width: 80px;
             height: 80px;
+            text-align: center;
+            text-decoration: underline;
+            text-indent: 20px;
         }
 
         * {
@@ -51,11 +84,17 @@
         }
         body {
             /* 设置多个字体可按顺序查找，如果电脑上没有前者，自动查找下一个字体 */
-            font-family: 'Times New Roman', Times, serif;
+            /* font-family: 'Times New Roman', Times, serif; */
             /* 谷歌浏览器默认文字大小为16px */
-            font-size: 20px;
+            /* font-size: 20px;
             font-weight: 400;
-            font-style: italic;
+            font-style: italic; */
+
+            /* font: italic 700 16px 'Microsoft Yahei' */
+            font: 12px 'Microsoft Yahei'
+        }
+        p {
+            line-height: 25px;
         }
     </style>
 </head>

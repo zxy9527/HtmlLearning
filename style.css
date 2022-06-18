@@ -1,0 +1,43 @@
+/* 这个文件中只包含CSS代码，专门设置综合案例html文件的样式 */
+h1 {
+    font-weight: 400; /* 文字不加粗 */
+    text-align: center; /* 文字水平居中 */ 
+}
+
+body {
+    font: 16px/28px 'Microsoft Yahei';
+}
+
+a {
+    text-decoration: none;
+}
+
+.gray {
+    color: #8888A7;
+    font-size: 12px;
+    text-align: center;
+}
+
+.search {
+    color: #666666;
+    width: 170px;
+    margin-left: 12px;
+    margin-right: 3px;
+}
+
+.pic {
+    text-align: center;
+}
+
+.footer {
+    color: #888888;
+    font-size: 12px;
+}
+
+button {
+    font-weight: 700;
+}
+
+p {
+    text-indent: 2em;
+}
