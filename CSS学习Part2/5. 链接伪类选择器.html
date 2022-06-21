@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>链接伪类选择器</title>
+    <style>
+        /* 伪类选择器用于向某些选择器添加特殊的效果 用冒号(:)表示 
+            常用链接伪类选择器：
+            a:link      选择所有未被选择过的链接
+            a:visited   选择所有已被访问过的链接
+            a:hover     选择鼠标指针位于其上的链接
+            a:active    选择活动链接(鼠标按下未弹起的链接)
+
+            注意：未确保链接伪类选择器生效，需严格按照以上顺序定义标签，即（LVHA）LV真好(HA) 0v0
+
+            实际开发中常用的操作只需指定 a 和 a:hover 即可：
+            a {
+                color: #333;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: #369;
+                text-decoration: underline;
+            }
+        */
+
+        a {
+            text-decoration: none;
+        }
+
+        a:link {
+            color: #333;
+        }
+
+        a:visited {
+            color: orange;
+        }
+
+        a:hover {
+            color: skyblue;
+        }
+
+        a:active {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">小猪佩奇</a>
+    <a href="#">小猪佩奇1</a>
+    <a href="#">小猪佩奇2</a>
+    <a href="#">小猪佩奇3</a>
+</body>
+
+</html>

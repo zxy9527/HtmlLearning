@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        /* 1. 后代选择器 只要元素二是元素一的后代 都会生效*/
+        ol li {
+            color: pink;
+        }
+
+        ol li a {
+            color: red;
+        }
+
+        .nav li a {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>ul里的li</li>
+        <li>ul里的li</li>
+        <li>ul里的li</li>
+        <li>ul里的li</li>
+    </ul>
+    <ul class="nav">
+        <li>ul里的li</li>
+        <li>ul里的li</li>
+        <li>ul里的li</li>
+        <li>ul里的li</li>
+        <li><a href="#">我是nav里的li里的a</a></li>
+        <li><a href="#">我是nav里的li里的a</a></li>
+        <li><a href="#">我是nav里的li里的a</a></li>
+        <li><a href="#">我是nav里的li里的a</a></li>
+    </ul>
+    <ol>
+        <li>ol里的li</li>
+        <li>ol里的li</li>
+        <li>ol里的li</li>
+        <li>ol里的li</li>
+        <li> <a href="">我是孙子</a></li>
+    </ol>
+</body>
+
+</html>
